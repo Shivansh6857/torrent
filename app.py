@@ -45,7 +45,7 @@ class SupabaseConnection:
 
 def get_connection():
     # URL-encoded the '@' in the password to '%40' to prevent parsing errors
-    return SupabaseConnection("postgresql://postgres:Shivansh%402023@db.omkxqeexstupwaoejzdx.supabase.co:5432/postgres")
+    return SupabaseConnection("postgresql://postgres.omkxqeexstupwaoejzdx:Shivansh%402023@aws-1-ap-southeast-2.pooler.supabase.com:5432/postgres")
 
 def init_db():
     conn = get_connection()
